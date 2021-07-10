@@ -1,0 +1,29 @@
+@use 'custom';
+
+@use '../Components/animations';
+@use '../Components/buttons';
+@use '../Components/mixins';
+@use '../Components/typography';
+
+@use '../Sections/companies';
+@use '../Sections/faq';
+@use '../Sections/footer';
+@use '../Sections/get-started';
+@use '../Sections/intro-section';
+@use '../Sections/navbar';
+@use '../Sections/portfolio';
+@use '../Sections/services';
+@use '../Sections/testimonials';
+
+
+
+
+.container-fluid
+{
+  width: 100%;
+  padding-right:0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
