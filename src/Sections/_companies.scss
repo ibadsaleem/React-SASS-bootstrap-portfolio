@@ -1,0 +1,47 @@
+@use '../scss/custom' as *;
+
+.companies{
+    padding: 5rem;
+    
+    &--div1:hover {
+        transform: scale(1.1);
+        margin-bottom: 20;
+        @include media-breakpoint-down(sm){
+            box-shadow: none !important;
+            margin-bottom: 10;
+            position: relative;
+            top : 20;
+
+        }
+    }   
+
+    &--div2:hover {
+   
+        transform: scale(1.1);
+        @include media-breakpoint-down(sm){
+            box-shadow: none !important;
+            margin-bottom: 10;
+            position: relative;
+            top : 20;
+            
+        }
+    }
+
+    
+}
+.test1{
+    background-color: red;
+}
+
+.test2{
+    background-color: blue;
+}
+
+.image{
+    @include media-breakpoint-down(md){
+        width: 10rem;
+        height: 3rem;
+        
+
+    }
+}
