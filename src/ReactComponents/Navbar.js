@@ -33,7 +33,7 @@ export function Navbar() {
               <a class="nav-link" href="#link">Link</a>
             </li>
             <li class="nav-item nav-item-sm">
-              <a class="nav-link" href="#link">Services</a>
+              <a class="nav-link" href="#serv">Services</a>
             </li>
             
             <li class="nav-item nav-item-sm">

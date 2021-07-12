@@ -1,0 +1,84 @@
+@use '../scss/custom' as *;
+
+
+.services {
+    margin-top: 10rem;
+    @include media-breakpoint-down(md){
+        margin-top: 5rem;
+    }
+    margin-bottom: 3rem;
+
+    &--moto {
+        font-size: xx-large;
+        font-family: "Poppins" , sans-serif;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        @include media-breakpoint-down(md){
+            border-bottom: 0.1rem solid rgba(gray , 0.7)  ;
+            padding-bottom: 2rem;
+            font-size: large;
+        }
+        @include media-breakpoint-up(md){
+            border-right: 0.1rem solid rgba(gray , 0.7) ;
+        }
+    }
+    &--desc {
+        font-family: "Poppins" , sans-serif;
+        text-align: center;
+        font-size: medium;
+        
+        padding-left: 2rem;
+        padding-right: 2rem;
+        @include media-breakpoint-down(md){
+            margin-top: 2rem;
+        }
+
+    }
+}
+
+.icons{
+    width : 2.5rem;
+    height: 2.5rem;
+    color : $primary;
+}
+
+.hero{
+    padding : 1rem 0;
+    
+    margin-bottom: 2rem;
+    @include media-breakpoint-up(sm){
+        &:hover{
+            transform: rotateX(0.5deg);
+            opacity: 0.8;
+            margin-bottom: 4rem;
+        }
+        
+    }
+    @include media-breakpoint-down(md){
+        &{
+            text-align: center;
+            
+        }
+        
+    }
+}
+
+.center{
+    position: relative;
+    top : 50%;
+    transform: translateY(-50%);
+    
+}
+.content{
+    @include media-breakpoint-up(md){
+        text-align: start;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    @include media-breakpoint-down(md){
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+}

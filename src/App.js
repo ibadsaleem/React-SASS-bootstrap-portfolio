@@ -4,6 +4,7 @@ import './assets/css/style.css';
 import Navbar from './ReactComponents/Navbar.js';
 import Intro from './ReactComponents/Intro.js';
 import Companies from './ReactComponents/Companies.js';
+import Servies from './ReactComponents/Services.js';
 function App() {
   
   return (
@@ -11,7 +12,8 @@ function App() {
           <Navbar />
           <Intro />
           <Companies />
-          dwad
+          <Servies />
+          
     </div>
   );
 }
