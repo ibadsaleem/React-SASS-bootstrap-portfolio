@@ -23,7 +23,7 @@ export default function Testimonials() {
     
     
     return (
-        <section class="testimonials">
+        <section id="testimonials" class="testimonials">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,80C384,96,480,160,576,160C672,160,768,96,864,101.3C960,107,1056,181,1152,192C1248,203,1344,149,1392,122.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
             {/* TESTIMONAILS HEADING */}
             <h2 class="display-2 fw-bold text-center title text-white">Testimonials</h2>

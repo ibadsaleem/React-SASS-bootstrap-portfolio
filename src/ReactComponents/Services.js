@@ -11,7 +11,7 @@ export function Services() {
     const  [duration, setduration] = useState(3);
 
     return (
-        <section>
+        <section id="services">
             <br />
             <br />
             <br />

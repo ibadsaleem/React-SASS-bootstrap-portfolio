@@ -27,17 +27,17 @@ export function Navbar() {
         <div   class=" collapse navbar-collapse justify-content-end" id="navbarSupportedContent" data-toggle="collapse" data-target=".navbar-collapse">
           <ul  class="navbar-nav  mb-2 mb-lg-0">
             <li class="nav-item nav-item-sm">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item nav-item-sm">
               <a class="nav-link" href="#link">Link</a>
             </li>
             <li class="nav-item nav-item-sm">
-              <a class="nav-link" href="#serv">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             
             <li class="nav-item nav-item-sm">
-              <a class="nav-link" href="#" >Testimonials</a>
+              <a class="nav-link" href="#testimonials" >Testimonials</a>
             </li>  
             <li class="nav-item nav-item-sm">
               <a class="nav-link nav-item-sm" href="#" >Faq</a>
