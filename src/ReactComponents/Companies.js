@@ -23,8 +23,8 @@ export function Companies() {
                         <div class="heading-line"></div>
                     </div>
                     <div class="row justify-content-sm-around">
-                        <div class="col-sm-6 p-1 col-lg-6 m-auto  justify-content-md-center  shadow-sm companies--div1"><div class="justify-content-center text-center "><a target="_blank" href={company['burneystore'].link}><img class="image" src={Burneystore} alt="burneystore" /></a></div></div>
-                        <div class="col-sm-6 p-1 col-lg-6 m-auto justify-content-md-center shadow-sm companies--div2"><div  class="justify-content-center text-center "><a target="_blank" href={company['alitfitt'].link}><img class="image" src={alitfitt} alt="alitfitt" /></a></div></div>
+                        <div class="col-sm-6 p-1 col-lg-6 m-auto  justify-content-md-center  shadow-sm companies--div1 img-fluid"><div class="justify-content-center text-center "><a target="_blank" href={company['burneystore'].link}><img class="image" src={Burneystore} alt="burneystore" /></a></div></div>
+                        <div class="col-sm-6 p-1 col-lg-6 m-auto justify-content-md-center shadow-sm companies--div2 img-fluid"><div  class="justify-content-center text-center "><a target="_blank" href={company['alitfitt'].link}><img class="image" src={alitfitt} alt="alitfitt" /></a></div></div>
                         {/* <div class="col-md-2 test"><a class="test1  companies" target="_blank" href={company['burneystore'].link}><img src={Burneystore} alt="burneystore" /></a></div>
                         <div class="col-md-2 test1"><a class="test1 companies" target="_blank" href={company['alitfitt'].link}><img style={{resize: "cover"}}src={alitfitt} alt="alitfitt" /></a></div>
                         <div class="col-md-2 test"><a class="test1  companies" target="_blank" href={company['burneystore'].link}><img src={Burneystore} alt="burneystore" /></a></div>
