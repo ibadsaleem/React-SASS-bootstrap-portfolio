@@ -6,6 +6,7 @@ import Intro from './ReactComponents/Intro.js';
 import Companies from './ReactComponents/Companies.js';
 import Servies from './ReactComponents/Services.js';
 import Testimonials from './ReactComponents/Testimonials';
+import FAQ from './ReactComponents/FAQ.js';
 function App() {
   
   return (
@@ -15,6 +16,7 @@ function App() {
           <Companies />
           <Servies />
           <Testimonials />
+          <FAQ />
     </div>
   );
 }

@@ -1,0 +1,29 @@
+@use '../scss/custom' as *;
+.custom-collapse{
+    
+    margin : 2rem;
+
+    @include media-breakpoint-down(md){
+        margin: 0.5rem;
+    }
+
+    .custom-body{
+        padding: 5rem;
+        @include media-breakpoint-down(md){
+            padding: 2rem;
+        }  
+    }
+    .tall-button{
+        height: 6rem;
+        @include media-breakpoint-down(md){
+            height: 4rem;
+        }  
+    }
+}
+
+.faq{
+    padding:1rem;
+    &--subtitle{
+        margin-bottom: 2rem;
+    }
+}
