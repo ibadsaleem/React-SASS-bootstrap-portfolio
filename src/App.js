@@ -7,6 +7,7 @@ import Companies from './ReactComponents/Companies.js';
 import Servies from './ReactComponents/Services.js';
 import Testimonials from './ReactComponents/Testimonials';
 import FAQ from './ReactComponents/FAQ.js';
+import Projects from './ReactComponents/Projects';
 function App() {
   
   return (
@@ -17,6 +18,7 @@ function App() {
           <Servies />
           <Testimonials />
           <FAQ />
+          <Projects />
     </div>
   );
 }

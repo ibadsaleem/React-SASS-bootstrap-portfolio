@@ -9,3 +9,12 @@
     left : 50%;
     transform: translate(-50% , -50%);
 }
+
+@mixin transitionattr{
+    // transition-delay: 800;
+    transition-duration: 1s;
+    transition-property: all;
+
+    
+}
+
