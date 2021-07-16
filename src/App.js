@@ -8,6 +8,7 @@ import Servies from './ReactComponents/Services.js';
 import Testimonials from './ReactComponents/Testimonials';
 import FAQ from './ReactComponents/FAQ.js';
 import Projects from './ReactComponents/Projects';
+import GetStarted from './ReactComponents/GetStarted';
 function App() {
   
   return (
@@ -19,6 +20,7 @@ function App() {
           <Testimonials />
           <FAQ />
           <Projects />
+          <GetStarted />
     </div>
   );
 }

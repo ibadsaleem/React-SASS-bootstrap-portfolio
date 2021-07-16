@@ -14,8 +14,6 @@ export default function Projects() {
                     <ProjectCard image={Alitfitt} name="Alitfitt" desc="Product website for UK based firm"/>
                    
                    
-                   
-                   
                     {/** add here 
                      * 
                      * 

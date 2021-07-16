@@ -1,0 +1,61 @@
+@use '../scss/custom' as *;
+@use '../Components/mixins.scss' as *;
+
+.contentboxes{
+    
+    &--description{
+        @include gradient;
+        padding:  6rem 2rem 4rem 2rem;
+        
+        @include media-breakpoint-down(md){
+            padding:  6rem 4rem 4rem 4rem;
+            
+        }
+        
+        .contact-us-title{
+            font-family: "Poppins",sans-serif;
+            margin-right: 1;
+        }
+        .contact-us-des{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .contact-us-next-step{
+           
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        li { list-style:none;
+            padding: 0.5rem;
+            svg{
+                margin-right: 0.8rem;
+            }
+            span{
+               color : white;
+            }
+        } 
+       
+    }    
+}
+
+.inputboxes{
+    width: 100%;
+    @include media-breakpoint-up(lg){
+        // width: 50%;
+               
+
+    }
+    
+}
+
+.focus-transtion:hover{
+    border : 2px solid rgba($primary , 0.9);
+}
+
+
+.padding-container{
+    padding: 1rem;
+
+    
+}
+

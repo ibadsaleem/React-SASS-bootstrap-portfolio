@@ -53,3 +53,14 @@
 .firstrow{
     margin-top: 10;
 }
+.projects{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+    @include media-breakpoint-down(lg){
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+    }
+    margin-bottom: 10rem;
+    padding-bottom: 5rem;
+}
