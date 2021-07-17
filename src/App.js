@@ -9,6 +9,7 @@ import Testimonials from './ReactComponents/Testimonials';
 import FAQ from './ReactComponents/FAQ.js';
 import Projects from './ReactComponents/Projects';
 import GetStarted from './ReactComponents/GetStarted';
+import Footer from './ReactComponents/Footer';
 function App() {
   
   return (
@@ -21,6 +22,7 @@ function App() {
           <FAQ />
           <Projects />
           <GetStarted />
+          <Footer />
     </div>
   );
 }
