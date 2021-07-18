@@ -1,9 +1,11 @@
 import React , {useState} from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import emailjs from "emailjs-com";
 
+import emailjs from 'emailjs-com';
 export default function GetStarted() {
+    
+
     const [firstname, setfirstname] = useState("");
     const [lastname, setlastname] = useState("");
     const [email, setemail] = useState("");
@@ -15,20 +17,15 @@ export default function GetStarted() {
    
 
     const submithandler = function(){
-        const info = {
+        let info = {
             
             from_name : firstname + " " + lastname ,
             to_name : "Hamza",
             email : email ,
             message : message
         };
-        emailjs.send("service_h2tdr58","template_dmqlqag",{
-            from_name: "daw",
-            to_name: "dwa",
-            message: "dwad",
-            email: "dwa",
-            });
-
+        emailjs.send("service_h2tdr58","template_dmqlqag",info , 'user_GwuxJfyRaYiOnIltqYeqK');
+        
     }
 
     
@@ -71,7 +68,7 @@ export default function GetStarted() {
                     <div class="heading-line"></div>
                     <br />
                     <br />
-                    <form action="submit" class="w-100">
+                    <form onSubmit={submithandler} action="submit" class="w-100">
                         <div class="row container-fluid">
 <div class="container-fluid row">
                             <div class=" col-lg-6 mb-2"><input onChange={(e)=>{setfirstname(e.target.value)}} class="shadow form-control padding-container focus-transtion" type="text" id="fname" name="fname" placeholder="First Name" />
@@ -90,7 +87,7 @@ export default function GetStarted() {
                             </div>
 
                             <div class="container w-75 text-center justify-content-center">
-                                <button type="submit" onClick={submithandler} class=" form-control rounded-pill bg-secondary w-100 text-white btn-rounded shadow">Submit</button>
+                                <button type="submit"  class=" form-control rounded-pill bg-secondary w-100 text-white btn-rounded shadow">Submit</button>
                             </div>
                         </div>
                     </form>
