@@ -1,7 +1,38 @@
-import React from 'react';
+import React , {useState} from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import emailjs from "emailjs-com";
+
 export default function GetStarted() {
+    const [firstname, setfirstname] = useState("");
+    const [lastname, setlastname] = useState("");
+    const [email, setemail] = useState("");
+    const [message, setmessage] = useState("");
+    
+    const service_id = "service_h2tdr58";
+    const template_id = "template_dmqlqag";
+
+   
+
+    const submithandler = function(){
+        const info = {
+            
+            from_name : firstname + " " + lastname ,
+            to_name : "Hamza",
+            email : email ,
+            message : message
+        };
+        emailjs.send("service_h2tdr58","template_dmqlqag",{
+            from_name: "daw",
+            to_name: "dwa",
+            message: "dwad",
+            email: "dwa",
+            });
+
+    }
+
+    
+    
     return (
         <section id="getstarted" class="getstarted container-fluid ">
             
@@ -43,23 +74,23 @@ export default function GetStarted() {
                     <form action="submit" class="w-100">
                         <div class="row container-fluid">
 <div class="container-fluid row">
-                            <div class=" col-lg-6 mb-2"><input class="shadow form-control padding-container focus-transtion" type="text" id="fname" name="fname" placeholder="First Name" />
+                            <div class=" col-lg-6 mb-2"><input onChange={(e)=>{setfirstname(e.target.value)}} class="shadow form-control padding-container focus-transtion" type="text" id="fname" name="fname" placeholder="First Name" />
                             </div>
 
 
-                            <div class="col-lg-6 mb-2"> <input class="form-control  padding-container focus-transtion" type="text" id="lname" name="lname" placeholder="Last Name" />
+                            <div class="col-lg-6 mb-2"> <input onChange={(e)=>{setlastname(e.target.value)}} class="form-control  padding-container focus-transtion" type="text" id="lname" name="lname" placeholder="Last Name" />
                             </div>
               </div>             
                             <div class="container-fluid mb-2 ps-3 pe-3">
-                                <input type="text" class="w-100 padding-container focus-transtion form-control shadow" id="email" name="email" placeholder="Email Address" />
+                                <input  onChange={(e)=>{setemail(e.target.value)}} type="text" class="w-100 padding-container focus-transtion form-control shadow" id="email" name="email" placeholder="Email Address" />
                             </div>
                             <div class="container-fluid  mb-2 ps-3 pe-3">
 
-                                <textarea class="padding-container w-100 mb-2 focus-transtion form-control shadow" name="message" rows="12" cols="50" placeholder="Message"></textarea>
+                                <textarea  onChange={(e)=>{setmessage(e.target.value)}} class="padding-container w-100 mb-2 focus-transtion form-control shadow" name="message" rows="12" cols="50" placeholder="Message"></textarea>
                             </div>
 
                             <div class="container w-75 text-center justify-content-center">
-                                <button class=" form-control rounded-pill bg-secondary w-100 text-white btn-rounded shadow">Submit</button>
+                                <button type="submit" onClick={submithandler} class=" form-control rounded-pill bg-secondary w-100 text-white btn-rounded shadow">Submit</button>
                             </div>
                         </div>
                     </form>
