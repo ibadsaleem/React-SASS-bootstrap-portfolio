@@ -16,16 +16,23 @@ export default function GetStarted() {
 
    
 
-    const submithandler = function(){
-        let info = {
+    const Submithandler = async function(event){
+        var info = {
             
-            from_name : firstname + " " + lastname ,
-            to_name : "Hamza",
+            fname : firstname,
+            
+            lname : lastname,
             email : email ,
             message : message
         };
-        emailjs.send("service_h2tdr58","template_dmqlqag",info , 'user_GwuxJfyRaYiOnIltqYeqK');
-        
+        const response = await emailjs.send("service_h2tdr58","template_dmqlqag",info , 'user_GwuxJfyRaYiOnIltqYeqK');
+        if(response.status == 200){
+           
+            return response;
+        }
+        window.alert("success");
+        console.log(`failure ${response}`);
+        // event.preventdefault();
     }
 
     
@@ -68,26 +75,26 @@ export default function GetStarted() {
                     <div class="heading-line"></div>
                     <br />
                     <br />
-                    <form onSubmit={submithandler} action="submit" class="w-100">
+                    <form onSubmit={Submithandler}  class="w-100">
                         <div class="row container-fluid">
 <div class="container-fluid row">
-                            <div class=" col-lg-6 mb-2"><input onChange={(e)=>{setfirstname(e.target.value)}} class="shadow form-control padding-container focus-transtion" type="text" id="fname" name="fname" placeholder="First Name" />
+                            <div class=" col-lg-6 mb-2"><input value={firstname} onChange={(e)=>{setfirstname(e.target.value)}} class="shadow form-control padding-container focus-transtion" type="text" id="fname" name="fname" placeholder="First Name" />
                             </div>
 
 
-                            <div class="col-lg-6 mb-2"> <input onChange={(e)=>{setlastname(e.target.value)}} class="form-control  padding-container focus-transtion" type="text" id="lname" name="lname" placeholder="Last Name" />
+                            <div class="col-lg-6 mb-2"> <input value={lastname} onChange={(e)=>{setlastname(e.target.value)}} class="form-control  padding-container focus-transtion" type="text" id="lname" name="lname" placeholder="Last Name" />
                             </div>
               </div>             
                             <div class="container-fluid mb-2 ps-3 pe-3">
-                                <input  onChange={(e)=>{setemail(e.target.value)}} type="text" class="w-100 padding-container focus-transtion form-control shadow" id="email" name="email" placeholder="Email Address" />
+                                <input value={email}  onChange={(e)=>{setemail(e.target.value)}} type="text" class="w-100 padding-container focus-transtion form-control shadow" id="email" name="email" placeholder="Email Address" />
                             </div>
                             <div class="container-fluid  mb-2 ps-3 pe-3">
 
-                                <textarea  onChange={(e)=>{setmessage(e.target.value)}} class="padding-container w-100 mb-2 focus-transtion form-control shadow" name="message" rows="12" cols="50" placeholder="Message"></textarea>
+                                <textarea  value={message} onChange={(e)=>{setmessage(e.target.value)}} class="padding-container w-100 mb-2 focus-transtion form-control shadow" name="message" rows="12" cols="50" placeholder="Message"></textarea>
                             </div>
 
-                            <div class="container w-75 text-center justify-content-center">
-                                <button type="submit"  class=" form-control rounded-pill bg-secondary w-100 text-white btn-rounded shadow">Submit</button>
+                            <div class="container w-75 text-center">
+                                <button type="submit"  value="submit" class=" form-control rounded-pill bg-secondary w-100 text-white shadow">Submit</button>
                             </div>
                         </div>
                     </form>

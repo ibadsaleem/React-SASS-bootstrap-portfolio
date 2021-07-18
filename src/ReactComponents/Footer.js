@@ -17,7 +17,7 @@ export default function Footer() {
             </div>
             <div class="container pt-4 pb-4 mt-4 mb-4 row personallinks">
                 <div class="col-lg-6 text-white text-center fw-bold">
-                    Connect with us on socail media
+                    Connect with us on social media
                 </div>
                 <div class="col-lg-6">
                     <div class="container">
