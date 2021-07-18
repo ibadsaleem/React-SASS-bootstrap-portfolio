@@ -31,7 +31,7 @@ export default function FAQ() {
     ]);
     
     return (
-        <section class="faq">
+        <section id= "faq"class="faq">
             <ScrollAnimation animateOnce={true} initiallyVisible={false} delay={1} duration={3} animateIn="fadeIn">
             <h2 class="display-3 fw-bold text-center">FAQ?</h2>
             <div class="heading-line"></div>

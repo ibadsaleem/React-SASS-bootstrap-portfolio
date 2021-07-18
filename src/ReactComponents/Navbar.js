@@ -40,7 +40,7 @@ export function Navbar() {
               <a class="nav-link" href="#testimonials" >Testimonials</a>
             </li>  
             <li class="nav-item nav-item-sm">
-              <a class="nav-link nav-item-sm" href="#" >Faq</a>
+              <a class="nav-link nav-item-sm" href="#faq" >Faq</a>
             </li>  
             <li class="nav-item">
               <a class="nav-link nav-item-sm" href="#projects" >Portfolio</a>

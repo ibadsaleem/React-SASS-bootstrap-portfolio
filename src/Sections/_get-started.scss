@@ -1,15 +1,29 @@
 @use '../scss/custom' as *;
 @use '../Components/mixins.scss' as *;
 
+.getstarted{
+    padding-top : 1rem;
+    background-color: rgba($gray-300, 0.5);
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    padding-top : 5rem;
+    @include media-breakpoint-down(lg){
+        border-radius: 0;
+        
+    }
+}
+
 .contentboxes{
     
+
     &--description{
         @include gradient;
         padding:  6rem 2rem 4rem 2rem;
         
+        
         @include media-breakpoint-down(md){
             padding:  6rem 4rem 4rem 4rem;
-            
+            border-radius: 10%;    
         }
         
         .contact-us-title{
@@ -18,6 +32,9 @@
         }
         .contact-us-des{
             font-family: Georgia, 'Times New Roman', Times, serif;
+            @include media-breakpoint-down(sm){
+                font-size: small;
+            }
         }
         .contact-us-next-step{
            
@@ -27,8 +44,15 @@
         
         li { list-style:none;
             padding: 0.5rem;
+            @include media-breakpoint-down(sm){
+                font-size: smaller;
+            }
             svg{
                 margin-right: 0.8rem;
+                @include media-breakpoint-down(sm){
+                    width : 0.5rem !important;
+                    height: 0.5rem !important;
+                }
             }
             span{
                color : white;
@@ -37,7 +61,13 @@
        
     }    
 }
-
+.contentboxes--form{
+    @include media-breakpoint-down(sm){
+        margin-top: 3rem;
+        box-shadow: 1px 2px rgba(#888888,0.34);
+    } 
+    
+}
 .inputboxes{
     width: 100%;
     @include media-breakpoint-up(lg){
