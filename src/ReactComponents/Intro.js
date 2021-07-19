@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react'
 import Logo from '../Media/intrologo2.png';
 import GLightbox from 'glightbox';
+
 export  function Intro() {
     const lightbox = GLightbox({
         'href': 'https://www.youtube.com/watch?v=Ga6RYejo6Hk',

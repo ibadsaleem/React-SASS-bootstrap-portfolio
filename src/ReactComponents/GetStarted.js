@@ -16,23 +16,26 @@ export default function GetStarted() {
 
    
 
-    const Submithandler = async function(event){
+    const sendemail  =  async (e)=>{
+        
         var info = {
             
-            fname : firstname,
+            "fname" : `${firstname}`,
             
-            lname : lastname,
-            email : email ,
-            message : message
+            "lname" : `${lastname}`,
+            "email" : `${email}` ,
+            "message" : message
         };
-        const response = await emailjs.send("service_h2tdr58","template_dmqlqag",info , 'user_GwuxJfyRaYiOnIltqYeqK');
-        if(response.status == 200){
-           
-            return response;
-        }
-        window.alert("success");
-        console.log(`failure ${response}`);
-        // event.preventdefault();
+       e.preventDefault();
+        await emailjs.send(service_id, template_id, info ,'user_GwuxJfyRaYiOnIltqYeqK' )        
+        .then((response)=> {
+       console.log('SUCCESS!', response.status, response.text);
+       e.target.reset();
+    }, (error)=> {
+       console.log('FAILED...', error);
+       e.target.reset();
+    });
+       
     }
 
     
@@ -75,7 +78,7 @@ export default function GetStarted() {
                     <div class="heading-line"></div>
                     <br />
                     <br />
-                    <form onSubmit={Submithandler}  class="w-100">
+                    <form id="form" onSubmit={sendemail}  class="w-100">
                         <div class="row container-fluid">
 <div class="container-fluid row">
                             <div class=" col-lg-6 mb-2"><input value={firstname} onChange={(e)=>{setfirstname(e.target.value)}} class="shadow form-control padding-container focus-transtion" type="text" id="fname" name="fname" placeholder="First Name" />
@@ -94,7 +97,7 @@ export default function GetStarted() {
                             </div>
 
                             <div class="container w-75 text-center">
-                                <button type="submit"  value="submit" class=" form-control rounded-pill bg-secondary w-100 text-white shadow">Submit</button>
+                                <input type="submit"  value="submit" class=" form-control rounded-pill bg-secondary w-100 text-white shadow" />
                             </div>
                         </div>
                     </form>
