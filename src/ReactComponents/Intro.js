@@ -1,8 +1,9 @@
 import React, { Component, useState } from 'react'
 import Logo from '../Media/intrologo2.png';
 import GLightbox from 'glightbox';
-
+import Particles from 'react-particles-js';
 export  function Intro() {
+    
     const lightbox = GLightbox({
         'href': 'https://www.youtube.com/watch?v=Ga6RYejo6Hk',
         'type': 'video',
@@ -12,12 +13,14 @@ export  function Intro() {
     const [enabledvide, setenabledvide] = useState(false);
 
         return (
-            <section id="home" class="intro-section">
+            <section id="particle-js" class="intro-section">
+              
                 <div class="container">
                     <div class="row .align-items-center text-white">
                         <div class="col-md-6 intros">
-                            <h1 class="display-2"> <span class="display-2--intro">HI! I am Hamza </span>
-                            <span class="display-2--description lh-lg"> About  ME! About  ME! About  ME! About  ME!
+                            
+                            <h1 class="display-2"> <span class="display-2--intro ">HI! I am Hamza </span>
+                            <span class="display-2--description lh-lg "> About  ME! About  ME! About  ME! About  ME!
                             About  ME! About  ME! About  ME! About  ME! About  ME!
                             About  ME! About  ME! About  ME! About  ME! About  ME!
                             About  ME! About  ME! About  ME! About  ME! About  ME!
@@ -51,7 +54,7 @@ export  function Intro() {
                 </div>
                 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L40,224C80,224,160,224,240,192C320,160,400,96,480,101.3C560,107,640,181,720,192C800,203,880,149,960,154.7C1040,160,1120,224,1200,224C1280,224,1360,160,1400,128L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-      
+               
                 </section> 
         )
     

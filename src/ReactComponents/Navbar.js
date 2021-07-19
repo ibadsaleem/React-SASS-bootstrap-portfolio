@@ -3,7 +3,7 @@ import React, { Component , useState, useEffect } from 'react'
 import '../assets/css/style.css';
 import '../scss/style.scss';
 
-import Logo from '../mylogo.jpg';
+import Logo from '../mylogo2.png';
 
 export function Navbar() {
     
@@ -20,7 +20,7 @@ export function Navbar() {
            
     <nav className="navbar navbar-expand-lg navbar-light menu justify-content-center shadow fixed-top ">
       <div  className="container">
-        <a className="navbar-brand" href="#"><img src={Logo} alt="" height="50px" /></a>
+        <a className="navbar-brand" href="#"><img width="100%" src={Logo} alt="" height="20%" /></a>
         <button className="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -29,9 +29,7 @@ export function Navbar() {
             <li className="nav-item nav-item-sm">
               <a className="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
-            <li className="nav-item nav-item-sm">
-              <a className="nav-link" href="#link">Link</a>
-            </li>
+        
             <li className="nav-item nav-item-sm">
               <a className="nav-link" href="#services">Services</a>
             </li>
