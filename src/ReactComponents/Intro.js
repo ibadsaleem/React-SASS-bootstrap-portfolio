@@ -2,6 +2,7 @@ import React, { Component, useState } from 'react'
 import Logo from '../Media/intrologo2.png';
 import GLightbox from 'glightbox';
 import Particles from 'react-particles-js';
+import content from '../Content/content';
 export  function Intro() {
     
     const lightbox = GLightbox({
@@ -20,11 +21,7 @@ export  function Intro() {
                         <div class="col-md-6 intros">
                             
                             <h1 class="display-2"> <span class="display-2--intro ">HI! I am Hamza </span>
-                            <span class="display-2--description lh-lg "> About  ME! About  ME! About  ME! About  ME!
-                            About  ME! About  ME! About  ME! About  ME! About  ME!
-                            About  ME! About  ME! About  ME! About  ME! About  ME!
-                            About  ME! About  ME! About  ME! About  ME! About  ME!
-                            About  ME! About  ME! About  ME! About  ME! About  ME!
+                            <span class="display-2--description lh-lg "> {content['intro-section'].moto}
                                 </span></h1>
 
                             <button type="button" class="rounded-pill btn-rounded"> Get in Touch  <span ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16">

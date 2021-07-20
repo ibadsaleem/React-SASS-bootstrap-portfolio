@@ -5,7 +5,7 @@ import Webdev from '../Media/services/web1.png';
 import Cprog from '../Media/services/cprog.png'; 
 import APIint from '../Media/services/world.png'; 
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import content from '../Content/content.js';
 export function Services() {
     const  [useonce, setuseonce] = useState(true);
     const  [duration, setduration] = useState(3);
@@ -27,9 +27,8 @@ export function Services() {
                     <div class="col-md-6 fw-bold services--moto">
                         Our Services range from initial  design to development anywhere at anytime at feasible rates.
                     </div>
-                    <div class="col-md-6 services--desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
-                    as opposed to using 'Content here, content here', making it look like readable English
+                    <div class="col-md-6 services--desc">
+                        {content['sevices-section'].moto}
                     </div>
                      
                 </div>
